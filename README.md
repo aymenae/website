@@ -1,15 +1,15 @@
 # 🎨 Personal Portfolio
 
-![mockup](https://github.com/aymenae/website/assets/)
+![mockup](https://github.com/aymenae/website/assets/screenshot.webp)
 
 A simple site to showcase the art I've made over the years. Check it out at [aymen.nl](https://aymen.nl/).
 
-I decided I needed to finally rewrite my site after staring at my horrid old codebase and design for so long. Made using SvelteKit and SCSS.
+I've rewritten my old portfolio with lots of jazzy stuff using Lanyard, Catpuccin, SvelteKit & SCSS.
 
 ## 📝 Notes
 
 - Thanks to [Lanyard API](https://github.com/Phineas/lanyard) for exposing my Discord Rich Presence
-- Burn your eyes at [v1.aymen.nl](https://v1.aymen.nl/)
+- Feast your eyes at [v1.aymen.nl](https://v1.aymen.nl/)
 
 ## ☁️ Hosting
 
