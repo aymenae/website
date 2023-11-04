@@ -2,7 +2,7 @@
 
 ![example](https://github.com/aymenae/website/blob/main/assets/screenshot.png)
 
-A simple site to showcase the art I've made over the years. Check it out at [aymen.nl](https://aymen.nl/).
+A simple site to showcase the stuff I've made over the years. Check it out at [aymen.nl](https://aymen.nl/).
 
 I've rewritten my old portfolio with lots of jazzy stuff using Lanyard, Catpuccin, SvelteKit & SCSS.
 
