@@ -1,6 +1,6 @@
 # 🎨 Personal Portfolio
 
-![example](https://github.com/aymenae/website/assets/screenshot.png)
+![example](https://github.com/aymenae/website/blob/main/assets/screenshot.png)
 
 A simple site to showcase the art I've made over the years. Check it out at [aymen.nl](https://aymen.nl/).
 
