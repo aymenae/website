@@ -4,9 +4,9 @@
 </script>
 
 <div class="socials-container">
-	<Social icon="github" tip="Riae" link="https://github.com/riae" />
+	<Social icon="github" tip="Aymen" link="https://github.com/aymenae" />
 	<Social icon="discord" tip={user.username} link={`https://discord.com/users/${user.id}`} />
-	<Social icon="kofi" tip="Tristanaa" link="https://ko-fi.com/tristanaa" />
+	<!-- <Social icon="kofi" tip="Tristanaa" link="https://ko-fi.com/tristanaa" /> -->
 </div>
 
 <style>

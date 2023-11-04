@@ -10,10 +10,11 @@
 
 	<div class="supporters">
 		{#each supporters as { name, icon, message }}
-			<div class="supporter">
-				<img src={icon} alt={name} />
-				<h6>{name}</h6>
-			</div>
+		<div class="supporter">
+			<img src={icon} alt={name} />
+			<h5>{name}</h5>
+			<h6>{message}</h6>
+		</div>
 		{/each}
 	</div>
 </section>

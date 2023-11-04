@@ -7,7 +7,7 @@
 
 	let activity = `@${user.username}`,
 		details = 'Fetching...',
-		activityImage = 'default.webp',
+		activityImage = 'default.gif',
 		pulse = 30000,
 		activityNumber = 0,
 		state: string,
@@ -22,12 +22,8 @@
 		currentRequestAnimationFrame: number;
 	// hasStatus = false,
 
-	const images: { [key: string]: string } = {
-		'CLIP STUDIO PAINT': 'https://i.imgur.com/IUVs3RB.png'
-	};
-
 	function localTime() {
-		state = new Date().toLocaleTimeString('en-US', { timeZone: 'America/New_York' });
+		state = new Date().toLocaleTimeString('en-US', { timeZone: 'Europe/Amsterdam' });
 	}
 
 	function musicProgress(spotify: Spotify) {
@@ -86,6 +82,7 @@
 				if (opcode === 0) {
 					isSpotify = data.listening_to_spotify;
 					isActivity = !!data.activities[0];
+					// defunct
 					// console.log(isActivity, hasStatus);
 					// hasStatus = data.activities[0].name === 'Custom Status';
 
