@@ -72,7 +72,7 @@
 	}
 
 	.text::before {
-		@include outlineText($content: 'aymen', $translateX: 97%, $translateY: -5%, $fontSize: 300px, $opacity: 0.22);
+		@include outlineText($content: 'AE', $translateX: 97%, $translateY: -5%, $fontSize: 300px, $opacity: 0.22);
 	}
 
 	h2 {
