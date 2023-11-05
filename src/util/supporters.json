@@ -4,5 +4,11 @@
         "icon": "/supporters/hobo.webp",
         "message":
             "Akiramenayou, omae!"
+    },
+    {
+        "name": "Katinas",
+        "icon": "/supporters/katinas.webp",
+        "message":
+            "Pretty cool code, I guess."
     }
 ]
