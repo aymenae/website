@@ -89,6 +89,7 @@ export interface Root {
 //--------------------------
 export interface Repo {
 	owner: string;
+	name: string;
 	repo: string;
 	link: string;
 	description: string;

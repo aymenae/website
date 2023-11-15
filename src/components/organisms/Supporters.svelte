@@ -47,7 +47,7 @@
 		margin-bottom: 3rem;
 
 		@media (max-width: 868px) {
-			justify-content: left;
+			justify-content: center;
 		}
 	}
 
