@@ -9,6 +9,7 @@
 			<Nav href="#home" section="/" isSelected={y < 350} />
 			<Nav href="#about" section="about" isSelected={y > 350 && y < 675} />
 			<Nav href="#code" section="code" isSelected={y > 675} />
+			<Nav href="#experiences" section="experiences" isSelected={y > 1000} />
 		</ul>
 	</div>
 </nav>
@@ -51,7 +52,7 @@
 			border-bottom: 1.5px solid var(--yellow-opacity);
 			padding: 0.5rem 0;
 			margin-top: 0.5rem;
-			width: 34rem;
+			width: 40rem;
 			background-color: var(--neutral-five);
 			box-shadow: 0px 15px 8px -10px rgba(0, 0, 0, 0.4);
 		}

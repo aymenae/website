@@ -1,0 +1,27 @@
+[
+    {
+        "company": "Tonomy Foundation",
+        "companyIcon": "tonomy.webp",
+        "position": "Open Source Developer",
+        "startDate": "2020-01-01",
+        "endDate": "2022-01-01",
+        "description": "Continued my tasks to help hand them off to another developer."
+      },
+    {
+      "company": "Tonomy Foundation",
+      "companyIcon": "tonomy.webp",
+      "position": "Software dev & SCRUM Master",
+      "startDate": "2020-01-01",
+      "endDate": "2022-01-01",
+      "description": "Frontend work on their Tonomy ID app & website, SCRUM master for multiple teams."
+    },
+    {
+      "company": "Divine Monkey",
+      "companyIcon": "example-company-1.png",
+      "position": "UX Designer & Frontend Developer",
+      "startDate": "2018-01-01",
+      "endDate": "2020-01-01",
+      "description": "Concept & mockup work on their crypto platform & branding."
+    }
+  ]
+  
