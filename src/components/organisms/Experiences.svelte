@@ -42,7 +42,7 @@
             <h6>{startDate} - {endDate}</h6>
           </div>
           <div>
-            <p>{description}</p>
+            <h6>{description}</h6>
           </div>
         </div>
       {/each}
@@ -198,4 +198,7 @@
 			gap: 0.9rem;
 		}
 	}
+    img {
+        border-radius: 100px;
+    }
 </style>
