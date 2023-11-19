@@ -1,14 +1,27 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import type { Repo } from '../../util/types';
-
-	let repos: Repo[];
-
+  
+	let repos: Repo[] = [];
+  
 	onMount(async () => {
-		const response = await fetch('https://gh-pinned-repos.egoist.dev/?username=aymenae');
-		repos = await response.json();
+	  const username = 'aymenae';
+	  const response = await fetch(`https://api.github.com/users/${username}/repos`);
+	  const data = await response.json();
+	  
+	  // Assuming your Repo type has similar properties to the GitHub API response
+	  repos = data.map(repo => ({
+		link: repo.html_url,
+		owner: repo.owner.login,
+		repo: repo.name,
+		description: repo.description,
+		languageColor: repo.language,
+		language: repo.language,
+		stars: repo.stargazers_count,
+		forks: repo.forks_count
+	  }));
 	});
-</script>
+  </script>
 
 <section class="wrapper" id="code">
 	<div class="title">
