@@ -26,7 +26,7 @@
 			Hey there, I'm Aymen! :] I'm a <Tooltip tip={age}
 				><span>{Math.floor(Number(age))}</span></Tooltip
 			>
-			year old digital artist and web/UI designer based in the Netherlands. I’ve taken design seriously since
+			year old digital nomad and web/UI developer based in the Netherlands. I’ve taken development & design seriously since
 			<span>2018</span>, and have been making silly projects since <span>2020</span>.
 			I like contributing to
 			<Tooltip tip="🤓">
@@ -35,7 +35,7 @@
 				</a>
 			</Tooltip>
 			as a web developer, which is probably the reason why you've ended up here. Currently struggling
-			with Svelte and Typescript.
+			with back-end and Typescript.
 		</p>
 	</div>
 </section>
