@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
 	import RichPresence from '../molecules/RichPresence.svelte';
 	import Tooltip from '../atoms/Tooltip.svelte';
 
