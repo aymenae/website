@@ -10,7 +10,7 @@ I've rewritten my old portfolio with lots of jazzy stuff using Lanyard, Catpucci
 
 - Thanks to [Lanyard API](https://github.com/Phineas/lanyard) for exposing my Discord Rich Presence
 - Feast your eyes at [aymen.nl](https://aymen.nl/)
-- Burn your eyes at [v1.aymen.nl](https://v1.aymen.nl_)
+- Burn your eyes at [v1.aymen.nl](https://v1.aymen.nl)
 
 ## ☁️ Hosting
 
