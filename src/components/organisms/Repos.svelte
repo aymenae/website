@@ -25,7 +25,7 @@
 
 <section class="wrapper" id="code">
 	<div class="title">
-		<h2><span>code</span>:work</h2>
+		<h2><span>code:</span>work</h2>
 	</div>
 	<div class="grid">
 		{#if repos}
