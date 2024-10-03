@@ -28,7 +28,7 @@
 			Hey there, I'm Aymen! :] I'm a <Tooltip tip={age}
 				><span>{Math.floor(Number(age))}</span></Tooltip
 			>
-			year old digital nomad and web/UI developer based in the Netherlands. I’ve taken development & design seriously since
+			year old developer based in the Netherlands. I’ve taken development & design seriously since
 			<span>2018</span>, and have been making silly projects since <span>2020</span>.
 			I like contributing to
 			<Tooltip tip="🤓">
@@ -36,8 +36,7 @@
 					<span>open source</span>
 				</a>
 			</Tooltip>
-			as a web developer, which is probably the reason why you've ended up here. Currently struggling
-			with back-end and Typescript.
+			as a web developer, which is probably the reason why you've ended up here. Currently learning Rust, Docker & everything k8s.
 		</p>
 	</div>
 </section>
