@@ -13,7 +13,7 @@
 <section id="home" class="wrapper">
 	<div>
 		<h1>Aymen</h1>
-		<h4>Software student and designer. <br />Passionate in making a mess of things.</h4>
+		<h4>Software dev student. <br />Passionate in making a mess of things.</h4>
 		<div class="socials">
 			<Socials />
 		</div>
