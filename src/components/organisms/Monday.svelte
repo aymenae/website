@@ -1,7 +1,7 @@
 <section id="home" class="wrapper">
 	<div>
 		<h1>Sorry!</h1>
-		<h4>My site is closed on Mondays. <br />Please check back from Tuesday to Saturday!</h4>
+		<h4>My site is closed on Mondays. <br />Please check back from Tuesday to Sunday!</h4>
 	</div>
 </section>
 
