@@ -7,6 +7,7 @@
 	import Footer from '../components/molecules/Footer.svelte';
 	import Experiences from '../components/organisms/Experiences.svelte';
 	import Monday from '../components/organisms/Monday.svelte';
+	import Whitespace from '../components/atoms/Whitespace.svelte';
 	import { toZonedTime } from 'date-fns-tz';
 	import { onMount } from 'svelte';
 
@@ -23,9 +24,11 @@
 	});
 </script>
 
-{#if isMonday}
+<!-- {#if isMonday}
 	<Monday />
-{:else}
+	<Whitespace />
+	<Footer />
+{:else} -->
 	<main>
 		<Hero />
 		<About />
@@ -34,4 +37,4 @@
 		<Supporters />
 		<Footer />
 	</main>
-{/if}
+<!-- {/if} -->
