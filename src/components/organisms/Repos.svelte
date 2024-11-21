@@ -1,34 +1,59 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import type { Repo } from '../../util/types';
-  
+
 	let repos: Repo[] = [];
-  
-	onMount(async () => {
-	  const username = 'aymenae';
-	  const response = await fetch(`https://api.github.com/users/${username}/repos`);
-	  const data = await response.json();
-	  
-	  // Assuming your Repo type has similar properties to the GitHub API response
-	  repos = data.map(repo => ({
+	let isLoading = true;
+	let error: string | null = null;
+
+	const processRepo = (repo: any) => ({
 		link: repo.html_url,
 		owner: repo.owner.login,
 		repo: repo.name,
-		description: repo.description,
+		description: repo.description || 'No description',
 		languageColor: repo.language,
-		language: repo.language,
-		stars: repo.stargazers_count,
-		forks: repo.forks_count
-	  }));
+		language: repo.language || 'Unknown',
+		stars: repo.stargazers_count || 0,
+		forks: repo.forks_count || 0
 	});
-  </script>
+
+	const fetchRepos = async (username: string, orgName: string) => {
+		try {
+			const [personalResponse, orgResponse] = await Promise.all([
+				fetch(`https://api.github.com/users/${username}/repos?per_page=10`),
+				fetch(`https://api.github.com/orgs/${orgName}/repos?per_page=10`)
+			]);
+
+			const personalData = await personalResponse.json();
+			const orgData = await orgResponse.json();
+
+			return [...personalData, ...orgData]
+				.filter(repo => 
+					!repo.name.includes('.github') && 
+					!repo.archived
+				)
+				.map(processRepo)
+		} catch (err) {
+			error = err instanceof Error ? err.message : 'An unknown error occurred';
+			return [];
+		}
+	};
+
+	onMount(async () => {
+		try {
+			repos = await fetchRepos('aymenae', 'deltionbits');
+		} finally {
+			isLoading = false;
+		}
+	});
+</script>
 
 <section class="wrapper" id="code">
 	<div class="title">
 		<h2><span>code:</span>work</h2>
 	</div>
 	<div class="grid">
-		{#if repos}
+		{#if repos.length > 0}
 			{#each repos as { link, owner, repo, description, languageColor, language, stars, forks }}
 				<a href={link} target="_blank" rel="noreferrer">
 					<div class="repo-card">
@@ -51,7 +76,9 @@
 						</div>
 						<div class="info-container">
 							<div class="info">
-								<span class="dot" style="background-color: {languageColor}" />
+								<span class="dot" style="background-color: {languageColor}">
+
+								</span>
 								<h6>{language}</h6>
 							</div>
 							<div class="info">
@@ -71,10 +98,14 @@
 				</a>
 			{/each}
 		{:else}
-			<div class="repo-card shimmer" />
-			<div class="repo-card shimmer" />
-			<div class="repo-card shimmer" />
-			<div class="repo-card shimmer" />
+			<div class="repo-card shimmer">
+			</div>
+			<div class="repo-card shimmer">
+			</div>
+			<div class="repo-card shimmer">
+			</div>
+			<div class="repo-card shimmer">
+			</div>
 		{/if}
 	</div>
 </section>
