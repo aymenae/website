@@ -24,22 +24,6 @@
 		"description": "Frontend work on their Tonomy ID app & website, SCRUM master for multiple teams."
 	},
 	{
-		"company": "MXDVS.CO",
-		"companyIcon": "mxdvs.webp",
-		"position": "UX Designer & Frontend Developer",
-		"startDate": "2020-07",
-		"endDate": "2021-02",
-		"description": "Developing a digital identity & webshop for a friend's clothing brand."
-	},
-	{
-		"company": "Ready4IT",
-		"companyIcon": "ready4it.jpg",
-		"position": "Full-stack Developer",
-		"startDate": "2020-09",
-		"endDate": "2020-11",
-		"description": "Redid the front-end for their web portal for employees & customers & fixed bugs in their DB."
-	},
-	{
 		"company": "Divine Monkey",
 		"companyIcon": "divine.webp",
 		"position": "UX Designer & Frontend Developer",
